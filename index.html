@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Speech Recognizer Using JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+        <style>
+            html, div {
+                background: url("/background.jpg") !important;
+            }
+
+            .btn-rec, .btn-stop {
+                border-radius: 8px;
+                border-style: none;
+                box-sizing: border-box;
+                color: #FFFFFF;
+                cursor: pointer;
+                flex-shrink: 0;
+                font-size: 16px;
+                font-weight: 500;
+                height: 4rem;
+                padding: 0 1.6rem;
+                text-align: center;
+                text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+                transition: all .5s;
+                user-select: none;
+                -webkit-user-select: none;
+                touch-action: manipulation;
+            }
+
+            .btn-rec {
+                background-image: linear-gradient(92.88deg, #45cc3c 9.16%, #4fbd32 43.89%, #34af32 64.72%);
+            }
+
+            .btn-stop {
+                background-image: linear-gradient(92.88deg, #c04141 9.16%, #b83f3f 43.89%, #ad2121 64.72%);
+
+            }
+
+            .btn-rec:hover, .btn-stop:hover {
+                transition-duration: .1s;
+            }
+
+            .btn-rec:hover {
+                box-shadow: rgba(64, 195, 99, 0.854) 0 1px 30px;
+            }
+
+            .btn-stop:hover {
+                box-shadow: rgba(144, 18, 18, 0.854) 0 1px 30px;
+            }
+
+            @media (min-width: 768px) {
+                .btn-rec, .btn-stop {
+                    padding: 0 2.6rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="px-4 pt-1 my-4 text-center border-bottom">
+            <h1 class="display-4 my-4 fw-bold">Speech to Text (STT) Implementation</h1>
+            <div class="col-lg-12">
+                <div class="p-4 p-md-5 border rounded-3 bg-light">
+                    <h5 class="fs-4 my-5 col-md-12" id="transcript"></h5>
+                    <div class="p-4 p-md-1 rounded-3 bg-light">
+                        <button class="w-75 my-4 btn btn-lg btn-primary btn-rec" id="start-btn" title="Start">Start</button>
+                        <button class="w-75 btn btn-lg btn-danger btn-stop" id="stop-btn" title="Stop">Stop and clear output</button>
+                        <p class="fs-4 my-4 col-md-12" id="instructions">Click <B>Start</B> to convert your speech to text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
