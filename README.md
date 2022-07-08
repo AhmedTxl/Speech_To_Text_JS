@@ -12,4 +12,4 @@ Bootstrap framework to make it beatifull and responsive.
 
 <B>This work is intended to be submitted as URL to Smart Methods Training Gate Due to the submission of WEEK 2 tasks.</B>
 
-<B>THIS WORK IS DEVELOPED BY: Ahmed Wasel Alharbi</B>
+<h2>THIS WORK IS DEVELOPED BY: Ahmed Wasel Alharbi</h2>
